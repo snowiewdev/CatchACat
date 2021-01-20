@@ -5,7 +5,8 @@ const btn = document.querySelector('#start');
 let lastBox;
 let timeUp = false;
 let score = 0;
-var meow = new Audio('meow.mp3');
+var meow = new Audio('./media/meow.mp3');
+var bgm = new Audio('./media/bgm.mp3');
 var bestScore = 0;
 
 //random amount of time of cat popping up
@@ -41,9 +42,11 @@ function startGame(){
   scoreBoard.textContent = 0;
   score = 0;
   timeUp = false;
+  startMusic();
   pop();
   setTimeout(() => {
     timeUp = true;
+    bgm.pause();
     compareScore(); // for best score
     result();
   }, 10000);
@@ -59,9 +62,18 @@ function hit(e){
   }
 }
 
+//meow when hit
 function soundEffect(){
   meow.currentTime = 0;
   meow.play();
+}
+
+//start bgm when game start
+function startMusic(){
+  bgm.currentTime = 0;
+  bgm.play();
+  bgm.volume = 0.2;
+  bgm.loop = true;
 }
 
 cats.forEach(cat => cat.addEventListener('click', hit));
@@ -84,6 +96,7 @@ function retrieveLocalStore(){
     }
   } else {
     // local storage is unavailble in this browser
+    console.log('cannot store best score in local storage');
   }
   return bestScore;
 }

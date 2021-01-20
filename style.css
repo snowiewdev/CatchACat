@@ -1,6 +1,6 @@
 body{
   font-family: 'Josefin Sans', sans-serif;
-  background: url(grass.png);
+  background: url(./media/grass.png);
   background-color: white;
   box-sizing: border-box;
   padding: 0;
@@ -62,7 +62,7 @@ header{
 }
 
 .cat {
-  background: url(cat2.svg) center no-repeat;
+  background: url(./media/cat2.svg) center no-repeat;
   background-size: contain;
   position: absolute;
   z-index: 1;
