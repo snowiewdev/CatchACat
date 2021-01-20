@@ -7,6 +7,6 @@ Let's see how many cats you can catch in 10 seconds! :D
 Play now: https://awesome-pasteur-a4a82b.netlify.app/
 
 ## Screenshots
-![screenshot1](/media/screencap.png)
+<img src="/media/screencap.png" width="600"/>
 
-![screenshot2](/media/screencap.JPG)
+<img src="/media/screencap.JPG" width="600"/>
