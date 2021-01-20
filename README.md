@@ -9,4 +9,4 @@ Play now: https://awesome-pasteur-a4a82b.netlify.app/
 ## Screenshots
 ![screenshot1](/media/screencap.png)
 
-![screenshot2](/media/screencap.jpg)
+![screenshot2](/media/screencap.JPG)
