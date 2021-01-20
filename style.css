@@ -1,0 +1,91 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  background: url(grass.png);
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#container{ 
+  width: 90%;
+  max-width: 600px;
+  height: 95vh;
+  margin-top: 1rem;
+  background-color: rgba(256, 256, 256, 0.6);
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  text-align: center;
+}
+
+#score{
+  padding: 1rem;
+}
+
+#play-area{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  background: transparent;
+  flex: 1 0 33.33%;
+  border: 5px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.box:after{
+  display: block;
+  background: burlywood;
+  background-size: contain;
+  border: 3px dotted #795548;
+  content: '';
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+}
+
+.cat {
+  background: url(cat2.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  top: 100%;
+  transition: all 0.4s;
+}
+
+.box.up .cat{
+  top: 5%;
+}
+
+button{
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 8px 64px;
+  background-color: transparent;
+  border: 2px solid black;
+  margin: 1rem 0 0.5rem 0;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  transition: ease 0.5s;
+}
