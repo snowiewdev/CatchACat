@@ -10,3 +10,6 @@ Play now: https://awesome-pasteur-a4a82b.netlify.app/
 <img src="/media/screencap.png" width="600"/>
 
 <img src="/media/screencap.JPG" width="600"/>
+
+## Other Mini-Games
+Connect Four : https://github.com/snowiewdev/connectFour
