@@ -12,6 +12,5 @@ Play now: https://awesome-pasteur-a4a82b.netlify.app/
 <img src="/media/screencap.JPG" width="600"/>
 
 ## 👾 Other Mini-Games
-Hangman : https://github.com/snowiewdev/hangman
-
+Hangman : https://github.com/snowiewdev/hangman <br/>
 Connect Four : https://github.com/snowiewdev/connectFour
